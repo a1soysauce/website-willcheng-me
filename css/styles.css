@@ -1,0 +1,29 @@
+:root{
+  --bg:#ffffff; --text:#0b0b0b; --muted:#555; --accent:#0b5cff; --card:#f7f7fb;
+}
+:root[data-theme='dark']{ --bg:#0b0b0f; --text:#e6eefc; --muted:#9aa3b2; --accent:#7aa2ff; --card:#0f1720; }
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+.container{max-width:960px;margin:0 auto;padding:24px}
+.site-header{border-bottom:1px solid rgba(0,0,0,0.06);}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;text-decoration:none;color:var(--text)}
+.nav{display:flex;gap:12px;align-items:center}
+.nav a{color:var(--text);text-decoration:none}
+.nav-toggle{display:none}
+.hero{padding:64px 0}
+.hero h1{margin:0 0 8px;font-size:2.2rem}
+.btn{display:inline-block;padding:8px 14px;border-radius:8px;background:var(--accent);color:white;text-decoration:none}
+.btn.outline{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.brief{padding-bottom:48px}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.muted{color:var(--muted)}
+.site-footer{border-top:1px solid rgba(0,0,0,0.06);padding:16px;text-align:center;margin-top:48px}
+@media(max-width:700px){
+  .nav{display:none}
+  .nav-toggle{display:block}
+}
+.resume h1{margin-top:8px}
+.contact p{margin:6px 0}
+code{background:rgba(0,0,0,0.04);padding:2px 6px;border-radius:4px}
